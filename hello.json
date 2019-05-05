@@ -1,0 +1,374 @@
+{
+    "_nodetype": "FileAST", 
+    "coord": null, 
+    "ext": [
+        {
+            "_nodetype": "FuncDef", 
+            "body": {
+                "_nodetype": "Compound", 
+                "block_items": [
+                    {
+                        "_nodetype": "FuncCall", 
+                        "args": {
+                            "_nodetype": "ExprList", 
+                            "coord": "../hello.c:7:9", 
+                            "exprs": [
+                                {
+                                    "_nodetype": "Constant", 
+                                    "coord": "../hello.c:7:9", 
+                                    "type": "string", 
+                                    "value": "\"Hello Ker! func1: x=%d\\n\""
+                                }, 
+                                {
+                                    "_nodetype": "ID", 
+                                    "coord": "../hello.c:7:37", 
+                                    "name": "x"
+                                }
+                            ]
+                        }, 
+                        "coord": "../hello.c:7:2", 
+                        "name": {
+                            "_nodetype": "ID", 
+                            "coord": "../hello.c:7:2", 
+                            "name": "printf"
+                        }
+                    }, 
+                    {
+                        "_nodetype": "Decl", 
+                        "bitsize": null, 
+                        "coord": "../hello.c:8:9", 
+                        "funcspec": [], 
+                        "init": {
+                            "_nodetype": "BinaryOp", 
+                            "coord": "../hello.c:8:13", 
+                            "left": {
+                                "_nodetype": "ID", 
+                                "coord": "../hello.c:8:13", 
+                                "name": "x"
+                            }, 
+                            "op": "+", 
+                            "right": {
+                                "_nodetype": "Constant", 
+                                "coord": "../hello.c:8:17", 
+                                "type": "int", 
+                                "value": "1"
+                            }
+                        }, 
+                        "name": "i", 
+                        "quals": [], 
+                        "storage": [], 
+                        "type": {
+                            "_nodetype": "TypeDecl", 
+                            "coord": "../hello.c:8:9", 
+                            "declname": "i", 
+                            "quals": [], 
+                            "type": {
+                                "_nodetype": "IdentifierType", 
+                                "coord": "../hello.c:8:5", 
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    }, 
+                    {
+                        "_nodetype": "If", 
+                        "cond": {
+                            "_nodetype": "BinaryOp", 
+                            "coord": "../hello.c:9:6", 
+                            "left": {
+                                "_nodetype": "ID", 
+                                "coord": "../hello.c:9:6", 
+                                "name": "i"
+                            }, 
+                            "op": "==", 
+                            "right": {
+                                "_nodetype": "Constant", 
+                                "coord": "../hello.c:9:11", 
+                                "type": "int", 
+                                "value": "3"
+                            }
+                        }, 
+                        "coord": "../hello.c:9:2", 
+                        "iffalse": {
+                            "_nodetype": "Compound", 
+                            "block_items": [
+                                {
+                                    "_nodetype": "Return", 
+                                    "coord": "../hello.c:12:3", 
+                                    "expr": {
+                                        "_nodetype": "FuncCall", 
+                                        "args": {
+                                            "_nodetype": "ExprList", 
+                                            "coord": "../hello.c:12:16", 
+                                            "exprs": [
+                                                {
+                                                    "_nodetype": "ID", 
+                                                    "coord": "../hello.c:12:16", 
+                                                    "name": "i"
+                                                }
+                                            ]
+                                        }, 
+                                        "coord": "../hello.c:12:10", 
+                                        "name": {
+                                            "_nodetype": "ID", 
+                                            "coord": "../hello.c:12:10", 
+                                            "name": "func1"
+                                        }
+                                    }
+                                }
+                            ], 
+                            "coord": "../hello.c:11:1"
+                        }, 
+                        "iftrue": {
+                            "_nodetype": "Compound", 
+                            "block_items": [
+                                {
+                                    "_nodetype": "Return", 
+                                    "coord": "../hello.c:10:3", 
+                                    "expr": {
+                                        "_nodetype": "Constant", 
+                                        "coord": "../hello.c:10:10", 
+                                        "type": "int", 
+                                        "value": "99"
+                                    }
+                                }
+                            ], 
+                            "coord": "../hello.c:9:1"
+                        }
+                    }, 
+                    {
+                        "_nodetype": "Return", 
+                        "coord": "../hello.c:14:5", 
+                        "expr": {
+                            "_nodetype": "Constant", 
+                            "coord": "../hello.c:14:12", 
+                            "type": "int", 
+                            "value": "88"
+                        }
+                    }
+                ], 
+                "coord": "../hello.c:6:1"
+            }, 
+            "coord": "../hello.c:5:5", 
+            "decl": {
+                "_nodetype": "Decl", 
+                "bitsize": null, 
+                "coord": "../hello.c:5:5", 
+                "funcspec": [], 
+                "init": null, 
+                "name": "func1", 
+                "quals": [], 
+                "storage": [], 
+                "type": {
+                    "_nodetype": "FuncDecl", 
+                    "args": {
+                        "_nodetype": "ParamList", 
+                        "coord": "../hello.c:5:15", 
+                        "params": [
+                            {
+                                "_nodetype": "Decl", 
+                                "bitsize": null, 
+                                "coord": "../hello.c:5:15", 
+                                "funcspec": [], 
+                                "init": null, 
+                                "name": "x", 
+                                "quals": [], 
+                                "storage": [], 
+                                "type": {
+                                    "_nodetype": "TypeDecl", 
+                                    "coord": "../hello.c:5:15", 
+                                    "declname": "x", 
+                                    "quals": [], 
+                                    "type": {
+                                        "_nodetype": "IdentifierType", 
+                                        "coord": "../hello.c:5:11", 
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }, 
+                    "coord": "../hello.c:5:5", 
+                    "type": {
+                        "_nodetype": "TypeDecl", 
+                        "coord": "../hello.c:5:5", 
+                        "declname": "func1", 
+                        "quals": [], 
+                        "type": {
+                            "_nodetype": "IdentifierType", 
+                            "coord": "../hello.c:5:1", 
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            "param_decls": null
+        }, 
+        {
+            "_nodetype": "FuncDef", 
+            "body": {
+                "_nodetype": "Compound", 
+                "block_items": [
+                    {
+                        "_nodetype": "Decl", 
+                        "bitsize": null, 
+                        "coord": "../hello.c:20:9", 
+                        "funcspec": [], 
+                        "init": {
+                            "_nodetype": "Constant", 
+                            "coord": "../hello.c:20:13", 
+                            "type": "int", 
+                            "value": "0"
+                        }, 
+                        "name": "x", 
+                        "quals": [], 
+                        "storage": [], 
+                        "type": {
+                            "_nodetype": "TypeDecl", 
+                            "coord": "../hello.c:20:9", 
+                            "declname": "x", 
+                            "quals": [], 
+                            "type": {
+                                "_nodetype": "IdentifierType", 
+                                "coord": "../hello.c:20:5", 
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    }, 
+                    {
+                        "_nodetype": "Decl", 
+                        "bitsize": null, 
+                        "coord": "../hello.c:21:9", 
+                        "funcspec": [], 
+                        "init": {
+                            "_nodetype": "FuncCall", 
+                            "args": {
+                                "_nodetype": "ExprList", 
+                                "coord": "../hello.c:21:19", 
+                                "exprs": [
+                                    {
+                                        "_nodetype": "BinaryOp", 
+                                        "coord": "../hello.c:21:19", 
+                                        "left": {
+                                            "_nodetype": "ID", 
+                                            "coord": "../hello.c:21:19", 
+                                            "name": "x"
+                                        }, 
+                                        "op": "+", 
+                                        "right": {
+                                            "_nodetype": "Constant", 
+                                            "coord": "../hello.c:21:23", 
+                                            "type": "int", 
+                                            "value": "1"
+                                        }
+                                    }
+                                ]
+                            }, 
+                            "coord": "../hello.c:21:13", 
+                            "name": {
+                                "_nodetype": "ID", 
+                                "coord": "../hello.c:21:13", 
+                                "name": "func1"
+                            }
+                        }, 
+                        "name": "y", 
+                        "quals": [], 
+                        "storage": [], 
+                        "type": {
+                            "_nodetype": "TypeDecl", 
+                            "coord": "../hello.c:21:9", 
+                            "declname": "y", 
+                            "quals": [], 
+                            "type": {
+                                "_nodetype": "IdentifierType", 
+                                "coord": "../hello.c:21:5", 
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    }, 
+                    {
+                        "_nodetype": "FuncCall", 
+                        "args": {
+                            "_nodetype": "ExprList", 
+                            "coord": "../hello.c:22:12", 
+                            "exprs": [
+                                {
+                                    "_nodetype": "Constant", 
+                                    "coord": "../hello.c:22:12", 
+                                    "type": "string", 
+                                    "value": "\"Hello Ker! main: x=%d, y=%d\\n\""
+                                }, 
+                                {
+                                    "_nodetype": "ID", 
+                                    "coord": "../hello.c:22:45", 
+                                    "name": "x"
+                                }, 
+                                {
+                                    "_nodetype": "ID", 
+                                    "coord": "../hello.c:22:48", 
+                                    "name": "y"
+                                }
+                            ]
+                        }, 
+                        "coord": "../hello.c:22:5", 
+                        "name": {
+                            "_nodetype": "ID", 
+                            "coord": "../hello.c:22:5", 
+                            "name": "printf"
+                        }
+                    }, 
+                    {
+                        "_nodetype": "Return", 
+                        "coord": "../hello.c:23:5", 
+                        "expr": {
+                            "_nodetype": "Constant", 
+                            "coord": "../hello.c:23:12", 
+                            "type": "int", 
+                            "value": "0"
+                        }
+                    }
+                ], 
+                "coord": "../hello.c:19:1"
+            }, 
+            "coord": "../hello.c:18:5", 
+            "decl": {
+                "_nodetype": "Decl", 
+                "bitsize": null, 
+                "coord": "../hello.c:18:5", 
+                "funcspec": [], 
+                "init": null, 
+                "name": "main", 
+                "quals": [], 
+                "storage": [], 
+                "type": {
+                    "_nodetype": "FuncDecl", 
+                    "args": null, 
+                    "coord": "../hello.c:18:5", 
+                    "type": {
+                        "_nodetype": "TypeDecl", 
+                        "coord": "../hello.c:18:5", 
+                        "declname": "main", 
+                        "quals": [], 
+                        "type": {
+                            "_nodetype": "IdentifierType", 
+                            "coord": "../hello.c:18:1", 
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            "param_decls": null
+        }
+    ]
+}
